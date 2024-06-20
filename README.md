@@ -34,6 +34,62 @@ sudo pacman -S stow
 brew install stow
 ```
 
+## Neovim
+
+```
+// Debian / Ubuntu
+sudo apt install neovim
+
+// Fedora
+sudo dnf install neovim
+
+// Arch
+sudo pacman -S neovim
+
+// MacOS
+brew install neovim
+```
+
+## Zsh
+
+```
+// Debian / Ubuntu
+sudo apt install zsh
+
+// Fedora
+sudo dnf install zsh
+
+// Arch
+sudo pacman -S zsh
+
+// MacOS
+brew install zsh
+```
+
+## Switching Default Shell to Zsh
+
+```
+chsh -s $(which zsh)
+```
+
+Reboot your system to apply the changes.
+
+## Oh My Zsh
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+```
+
+## Powerlevel10k
+
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+```
+
 # Installation
 
 ```
@@ -44,7 +100,17 @@ cd .dotfiles
 Then, use GNU stow to create symlinks for the desired configuration files.
 
 ```
-stow .
+stow --adopt .
+```
+
+If the above option does not work:
+
+```
+rm -rf ~/.config/nvim
+rm -rf ~/.config/alacritty
+rm -rf ~/.config/tmux
+rm ~/.zshrc
+rm ~/.p10k.zsh
 ```
 
 Stow will automatically ignore the README.md file and create symlinks for all other files in the repository.
