@@ -1,12 +1,8 @@
-#### 5nsou's Dotfiles
-
 Welcome! This is the 5nsou dotfiles repository. Here you will find my personal configuration files for various programs and tools that I use on a daily basis. Feel free to use them as a reference or copy them to your own system.
 
-### Installation
+# Requirements
 
-## Requirements
-
-# Git
+## Git
 
 ```
 // Debian / Ubuntu
@@ -22,7 +18,7 @@ sudo pacman -S git
 brew install git
 ```
 
-# Stow
+## Stow
 
 ```
 // Debian / Ubuntu
@@ -38,7 +34,7 @@ sudo pacman -S stow
 brew install stow
 ```
 
-## Installation
+# Installation
 
 ```
 $ git clone https://github.com/justin-huiyun-lee/.dotfiles
