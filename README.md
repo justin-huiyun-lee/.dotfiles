@@ -74,6 +74,8 @@ chsh -s $(which zsh)
 
 Reboot your system to apply the changes.
 
+# Customizations
+
 ## Oh My Zsh
 
 ```
@@ -88,6 +90,22 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-sy
 
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+```
+
+## Neofetch
+
+```
+// Debian / Ubuntu
+sudo apt install neofetch
+
+// Fedora
+sudo dnf install neofetch
+
+// Arch
+sudo pacman -S neofetch
+
+// MacOS
+brew install neofetch
 ```
 
 # Installation
