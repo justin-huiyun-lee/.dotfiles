@@ -37,14 +37,14 @@ brew install stow
 # Installation
 
 ```
-$ git clone https://github.com/justin-huiyun-lee/.dotfiles
-$ cd .dotfiles
+git clone https://github.com/justin-huiyun-lee/.dotfiles
+cd .dotfiles
 ```
 
 Then, use GNU stow to create symlinks for the desired configuration files.
 
 ```
-$ stow .
+stow .
 ```
 
 Stow will automatically ignore the README.md file and create symlinks for all other files in the repository.
