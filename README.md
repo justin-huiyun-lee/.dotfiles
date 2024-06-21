@@ -174,3 +174,9 @@ rm ~/.p10k.zsh
 ```
 
 Stow will automatically ignore the README.md file and create symlinks for all other files in the repository.
+
+### Oh My Zsh Configuration
+
+```
+4 1 2 n 1 1 n 3
+```
