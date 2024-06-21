@@ -1,5 +1,14 @@
 Welcome! This is my full setup on any device. It includes my dotfiles, which are configurations for various programs such as Neovim, Alacritty, Tmux, and Zsh. I use GNU Stow to manage my dotfiles, which creates symlinks to the configuration files in this repository.
 
+# Recommended Font
+
+I recommend using the [Meslo Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip).
+\*You have to download the Mono Version, otherwise the default configuration will look weird.
+
+If you don't want to use the Meslo Nerd Font Mono, you can change the font in the Alacritty configuration file.
+
+[Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+
 # Requirements
 
 ## Alacritty
@@ -66,6 +75,22 @@ sudo pacman -S neovim
 brew install neovim
 ```
 
+## Tmux
+
+```
+// Debian / Ubuntu
+sudo apt install tmux
+
+// Fedora
+sudo dnf install tmux
+
+// Arch
+sudo pacman -S tmux
+
+// MacOS
+brew install tmux
+```
+
 ## Zsh
 
 ```
@@ -88,7 +113,7 @@ brew install zsh
 chsh -s $(which zsh)
 ```
 
-Reboot your system to apply the changes.
+### Reboot your system to apply the changes.
 
 # Customizations
 
