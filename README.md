@@ -1,6 +1,22 @@
-Welcome! This is the 5nsou dotfiles repository. Here you will find my personal configuration files for various programs and tools that I use on a daily basis. Feel free to use them as a reference or copy them to your own system.
+Welcome! This is my full setup on any device. It includes my dotfiles, which are configurations for various programs such as Neovim, Alacritty, Tmux, and Zsh. I use GNU Stow to manage my dotfiles, which creates symlinks to the configuration files in this repository.
 
 # Requirements
+
+## Alacritty
+
+```
+// Debian / Ubuntu
+sudo apt install alacritty
+
+// Fedora
+sudo dnf install alacritty
+
+// Arch
+sudo pacman -S alacritty
+
+// MacOS
+brew install alacritty
+```
 
 ## Git
 
