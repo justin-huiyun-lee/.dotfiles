@@ -36,6 +36,8 @@ Go: A programming language for backend web development.
 
 GCC: A compiler for C and C++.
 
+# Commands
+
 ```
 // Debian / Ubuntu
 sudo apt install alacritty
