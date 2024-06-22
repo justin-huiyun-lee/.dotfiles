@@ -14,19 +14,27 @@ If you don't want to use the Meslo Nerd Font Mono, you can change the font in th
 
 ## This includes alacritty, git, stow, neovim, tmux, zsh, and neofetch.
 
-### alacritty: A fast, cross-platform, OpenGL terminal emulator.
+#### alacritty: A fast, cross-platform, OpenGL terminal emulator.
 
-### git: A distributed version control system.
+#### git: A distributed version control system.
 
-### stow: A symlink farm manager.
+#### stow: A symlink farm manager.
 
-### neovim: A highly customizable text editor.
+#### neovim: A highly customizable text editor.
 
-### tmux: A terminal multiplexer.
+#### tmux: A terminal multiplexer.
 
-### zsh: A shell designed for interactive use.
+#### zsh: A shell designed for interactive use.
 
-### neofetch: A command-line system information tool.
+#### neofetch: A command-line system information tool.
+
+#### npm: A package manager to install prettier and other packages for neovim.
+
+#### Rust: A programming language for low level systems programming.
+
+#### Go: A programming language for backend web development.
+
+#### GCC: A compiler for C and C++.
 
 ```
 // Debian / Ubuntu
@@ -37,6 +45,7 @@ sudo apt install neovim
 sudo apt install tmux
 sudo apt install zsh
 sudo apt install neofetch
+sudo apt install npm
 
 // Fedora
 sudo dnf install alacritty
@@ -46,6 +55,7 @@ sudo dnf install neovim
 sudo dnf install tmux
 sudo dnf install zsh
 sudo dnf install neofetch
+sudo dnf install npm
 
 // Arch
 sudo pacman -S alacritty
@@ -55,6 +65,7 @@ sudo pacman -S neovim
 sudo pacman -S tmux
 sudo pacman -S zsh
 sudo pacman -S neofetch
+sudo pacman -S npm
 
 // MacOS
 brew install alacritty
@@ -64,6 +75,7 @@ brew install neovim
 brew install tmux
 brew install zsh
 brew install neofetch
+brew install npm
 ```
 
 ## Switching Default Shell to Zsh
