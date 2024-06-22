@@ -86,11 +86,14 @@ brew install npm
 // Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-// Golang for Linux
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.22.4.linux-amd64.tar.gz
-wget https://golang.org/dl/go1.17.1.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.17.1.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
+// Golang for Ubuntu / Debian
+sudo apt install golang
+
+// Golang for Fedora
+sudo dnf install golang
+
+// Golang for Arch
+sudo pacman -S go
 
 // Golang for MacOS
 brew install go
