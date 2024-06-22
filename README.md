@@ -2,9 +2,9 @@ Welcome! This is my full setup on any device. It includes my dotfiles, which are
 
 # Recommended Font
 
-I recommend using the [Meslo Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip).
+I recommend using the [MesloLGS Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip).
 
-_You have to download the Mono Version, otherwise the default configuration will look weird._
+_You have to download the LGS Mono Version, otherwise the default configuration will look weird._
 
 If you don't want to use the Meslo Nerd Font Mono, you can change the font in the Alacritty configuration file.
 
