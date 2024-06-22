@@ -82,10 +82,16 @@ brew install npm
 
 # Compilers & Languages
 
+## Rust
+
 ```
 // Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
+## Golang
+
+```
 // Golang for Ubuntu / Debian
 sudo apt install golang
 
@@ -97,7 +103,11 @@ sudo pacman -S go
 
 // Golang for MacOS
 brew install go
+```
 
+## GCC
+
+```
 // GCC for Ubuntu / Debian
 sudo apt install build-essential
 
@@ -114,9 +124,7 @@ brew install gcc
 # Switching Default Shell to Zsh
 
 ```
-
 chsh -s $(which zsh)
-
 ```
 
 ### Reboot your system to apply the changes.
@@ -172,6 +180,10 @@ Stow will automatically ignore the README.md file and create symlinks for all ot
 ```
 
 4 1 2 n 1 1 n 3
+
+```
+
+```
 
 ```
 
