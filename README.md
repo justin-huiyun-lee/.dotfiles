@@ -14,27 +14,17 @@ If you don't want to use the Meslo Nerd Font Mono, you can change the font in th
 
 ## This includes alacritty, git, stow, neovim, tmux, zsh, and neofetch.
 
-#### alacritty: A fast, cross-platform, OpenGL terminal emulator.
-
-#### git: A distributed version control system.
-
-#### stow: A symlink farm manager.
-
-#### neovim: A highly customizable text editor.
-
-#### tmux: A terminal multiplexer.
-
-#### zsh: A shell designed for interactive use.
-
-#### neofetch: A command-line system information tool.
-
-#### npm: A package manager to install prettier and other packages for neovim.
-
-#### Rust: A programming language for low level systems programming.
-
-#### Go: A programming language for backend web development.
-
-#### GCC: A compiler for C and C++.
+alacritty: A fast, cross-platform, OpenGL terminal emulator.
+git: A distributed version control system.
+stow: A symlink farm manager.
+neovim: A highly customizable text editor.
+tmux: A terminal multiplexer.
+zsh: A shell designed for interactive use.
+neofetch: A command-line system information tool.
+npm: A package manager to install prettier and other packages for neovim.
+Rust: A programming language for low level systems programming.
+Go: A programming language for backend web development.
+GCC: A compiler for C and C++.
 
 ```
 // Debian / Ubuntu
