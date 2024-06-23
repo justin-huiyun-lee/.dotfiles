@@ -169,6 +169,7 @@ rm -rf ~/.config/tmux
 rm ~/.zshrc
 rm ~/.p10k.zsh
 stow .
+exit
 ```
 
 Stow will automatically ignore the README.md file and create symlinks for all other files.
