@@ -88,10 +88,16 @@ brew install curl
 
 # Compilers & Languages
 
+## Rust
+
 ```
 // Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
+## Golang
+
+```
 // Golang for Ubuntu / Debian
 sudo apt install golang
 
@@ -103,7 +109,11 @@ sudo pacman -S go
 
 // Golang for MacOS
 brew install go
+```
 
+## GCC
+
+```
 // GCC for Ubuntu / Debian
 sudo apt install build-essential
 
@@ -120,9 +130,7 @@ brew install gcc
 # Switching Default Shell to Zsh
 
 ```
-
 chsh -s $(which zsh)
-
 ```
 
 ### Reboot your system to apply the changes.
@@ -132,43 +140,35 @@ chsh -s $(which zsh)
 ## Oh My Zsh
 
 ```
-
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
-
 ```
 
 ## Powerlevel10k
 
 ```
-
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-
 ```
 
 # Installation
 
 ```
-
 git clone https://github.com/justin-huiyun-lee/.dotfiles
 cd .dotfiles
-
 ```
 
 Then delete the default configuration files in your home directory and create symlinks to the configuration files in this repository.
 
 ```
-
 rm -rf ~/.config/nvim
 rm -rf ~/.config/alacritty
 rm -rf ~/.config/tmux
 rm ~/.zshrc
 rm ~/.p10k.zsh
 stow .
-
 ```
 
 Stow will automatically ignore the README.md file and create symlinks for all other files.
@@ -176,11 +176,5 @@ Stow will automatically ignore the README.md file and create symlinks for all ot
 ### Oh My Zsh Configuration
 
 ```
-
 4 1 2 n 1 1 n 3
-
-```
-
-```
-
 ```
