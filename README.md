@@ -30,6 +30,8 @@ neofetch: A command-line system information tool.
 
 npm: A package manager to install prettier and other packages for neovim.
 
+curl: A command-line tool to transfer data.
+
 Rust: A programming language for low level systems programming.
 
 Go: A programming language for backend web development.
@@ -48,6 +50,7 @@ sudo apt install tmux
 sudo apt install zsh
 sudo apt install neofetch
 sudo apt install npm
+sudo apt install curl
 
 // Fedora
 sudo dnf install alacritty
@@ -58,6 +61,7 @@ sudo dnf install tmux
 sudo dnf install zsh
 sudo dnf install neofetch
 sudo dnf install npm
+sudo dnf install curl
 
 // Arch
 sudo pacman -S alacritty
@@ -68,6 +72,7 @@ sudo pacman -S tmux
 sudo pacman -S zsh
 sudo pacman -S neofetch
 sudo pacman -S npm
+sudo pacman -S curl
 
 // MacOS
 brew install alacritty
@@ -78,6 +83,7 @@ brew install tmux
 brew install zsh
 brew install neofetch
 brew install npm
+brew install curl
 ```
 
 # Compilers & Languages
