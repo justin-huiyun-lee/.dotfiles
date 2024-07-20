@@ -126,5 +126,7 @@ alias zso='source ~/.zshrc'
 
 alias vcfile='cd ~/.config/nvim'
 
+alias txks='tmux kill-session -t'
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
