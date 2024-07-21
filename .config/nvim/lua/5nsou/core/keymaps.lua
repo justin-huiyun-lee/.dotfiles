@@ -18,9 +18,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 -- wipe the entire file (delete all lines)
-vim.keymap.set("n", "<leader>wipe", function()
-	vim.cmd("%d")
-end)
+vim.keymap.set("n", "<leader>wipe", 'GVgg0"_d')
 
 -- copy the entire file to clipboard
 vim.keymap.set("n", "<leader>cc", "gg<S-v>Gy")
@@ -68,3 +66,16 @@ end)
 vim.keymap.set("n", "<leader>rh", function()
 	vim.cmd("noh")
 end)
+
+-- disable copilot
+vim.keymap.set("n", "<leader>dc", function()
+	vim.cmd("Copilot disable")
+end)
+
+-- enable copilot
+vim.keymap.set("n", "<leader>ec", function()
+	vim.cmd("Copilot enable")
+end)
+
+local opt = vim.opt
+opt.wrap = true
