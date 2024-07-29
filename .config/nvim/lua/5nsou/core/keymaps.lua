@@ -18,9 +18,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 -- wipe the entire file (delete all lines)
-vim.keymap.set("n", "<leader>wipe", 'GVgg0"_d')
-
--- copy the entire file to clipboard
+vim.keymap.set("n", "<leader>wipe", 'GVgg0"_d') -- copy the entire file to clipboard
 vim.keymap.set("n", "<leader>cc", "gg<S-v>Gy")
 
 -- save and quit file (quit safe)
@@ -77,5 +75,12 @@ vim.keymap.set("n", "<leader>ec", function()
 	vim.cmd("Copilot enable")
 end)
 
-local opt = vim.opt
-opt.wrap = true
+-- set textwidth to 130
+vim.keymap.set("n", "<leader>tw", function()
+	vim.cmd("set textwidth=130")
+end)
+
+-- apply textwidth to the entire file
+vim.keymap.set("n", "<leader>atw", function()
+	vim.cmd("normal gggqG")
+end)
