@@ -168,6 +168,7 @@ rm -rf ~/.config/alacritty
 rm -rf ~/.config/tmux
 rm ~/.zshrc
 rm ~/.p10k.zsh
+git clone https://github.com/tmux-plugins/tpm ~/.dotfiles/.config/tmux/plugins/tpm/
 stow .
 exit
 ```
