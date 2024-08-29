@@ -84,3 +84,12 @@ end)
 vim.keymap.set("n", "<leader>atw", function()
 	vim.cmd("normal gggqG")
 end)
+
+-- disable copilot, set textwidth to 130, apply textwidth to the entire file
+vim.keymap.set("n", "<leader>dtw", function()
+	vim.cmd("Copilot disable")
+	vim.cmd("set textwidth=130")
+	vim.cmd("normal gggqG")
+	vim.cmd("%s/  //g")
+	vim.cmd("noh")
+end)
