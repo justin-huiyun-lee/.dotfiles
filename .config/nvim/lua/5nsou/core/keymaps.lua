@@ -93,3 +93,6 @@ vim.keymap.set("n", "<leader>dtw", function()
 	vim.cmd("%s/  //g")
 	vim.cmd("noh")
 end)
+
+-- g_
+vim.keymap.set("n", ";", "g_a<Space>")
