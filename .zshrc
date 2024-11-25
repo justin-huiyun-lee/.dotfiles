@@ -154,3 +154,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export CPATH=/opt/homebrew/include
+export LIBRARY_PATH=/opt/homebrew/lib

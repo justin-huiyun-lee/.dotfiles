@@ -8,13 +8,20 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
-
 -- Go back to nvim default file tree
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Source the current file
 vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
+end)
+
+vim.keymap.set("n", "<leader>pf", function()
+	vim.cmd("Telescope find_files")
+end)
+
+vim.keymap.set("n", "<leader>ps", function()
+	vim.cmd("Telescope live_grep")
 end)
 
 -- wipe the entire file (delete all lines)
@@ -85,14 +92,22 @@ vim.keymap.set("n", "<leader>atw", function()
 	vim.cmd("normal gggqG")
 end)
 
--- disable copilot, set textwidth to 130, apply textwidth to the entire file
 vim.keymap.set("n", "<leader>dtw", function()
+	-- Disable Copilot
 	vim.cmd("Copilot disable")
-	vim.cmd("set textwidth=130")
-	vim.cmd("normal gggqG")
-	vim.cmd("%s/  //g")
+
+	-- Set textwidth to 130
+	vim.o.textwidth = 130
+
+	-- Reformat entire buffer to fit within textwidth
+	vim.cmd("normal! gggqG")
+
+	-- Safely remove all double spaces if they exist
+	pcall(vim.cmd, "%s/  //g")
+
+	-- Clear search highlighting
 	vim.cmd("noh")
-end)
+end, { noremap = true, silent = true })
 
 -- g_
 vim.keymap.set("n", ";", "g_a<Space>")
